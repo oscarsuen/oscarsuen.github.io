@@ -1,9 +1,10 @@
 ---
 title: "First Blog Post"
-# date: 2019-04-18T15:34:30-04:00
+date: 2020-07-06
 categories:
-  - blog
+    - blog
 tags:
+    - test
 ---
 
 This is a test of the `_posts` system on [Jekyll](https://jekyllrb.com/).
