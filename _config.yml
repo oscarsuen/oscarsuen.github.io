@@ -13,16 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Oscar Suen
-email: suen.oscar@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: oscarsuen
-github_username: oscarsuen
+locale: "en-US"
+title: "Oscar Suen"
+name: &name "Oscar Suen"
+email: &email "suen.oscar@gmail.com"
+description: "Oscar Suen Personal Website"
+url: &url "https://oscarsuen.github.io"
+baseurl: ""
+repository: "oscarsuen/oscarsuen.github.io"
+twitter_username: &twitter "oscarsuen"
+github_username: &github "oscarsuen"
 minimal_mistakes_skin: default
-search: true
+search: false
 
 # Build settings
 markdown: kramdown
@@ -31,7 +33,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -47,6 +49,10 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - "*.swp"
+  - README.md
+  - package-lock.json
 
 # Plugins (previously gems:)
 plugins:
@@ -58,19 +64,14 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Oscar Suen"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://oscarsuen.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/oscarsuen"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/oscarsuen"
+  name: *name
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "MIT '20 (CS + Econ) interested in machine learning and causal inference."
+  location: "Cambridge, MA"
+  employer: "MIT"
+  email: *email
+  twitter: *twitter
+  github: *github
 
 footer:
   links:
@@ -90,12 +91,12 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
