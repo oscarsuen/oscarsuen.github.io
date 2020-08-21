@@ -9,4 +9,4 @@ I am a MIT ('20) Computer Science and Economics student interested in machine le
 
 ## Quick Links
 - [Github](https://github.com/oscarsuen)
-- [Opioids Paper](https://docs.google.com/viewer?url=https://github.com/oscarsuen/opioid_lfp/raw/master/paper/paper.pdf)
+- [Opioids Paper](https://raw.githack.com/oscarsuen/opioid_lfp/master/paper/paper.pdf)

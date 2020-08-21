@@ -14,4 +14,4 @@ I scrape and analyze the text from the Federal Reserve's Beige Book from 1970--2
 ## Opioids and the Labor Market
 Using the differential impact of the introduction of Medicare Part D as an instrument, I show that the opioid epidemic has negative impacts on local labor markets.  The latest version of the paper can be found [here][op-pdf].
 
-[op-pdf]: https://docs.google.com/viewer?url=https://github.com/oscarsuen/opioid_lfp/raw/master/paper/paper.pdf
+[op-pdf]: https://raw.githack.com/oscarsuen/opioid_lfp/master/paper/paper.pdf
